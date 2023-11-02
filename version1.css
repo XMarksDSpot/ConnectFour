@@ -1,76 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #282c34;
-  }
-  
-  #game {
-    text-align: center;
-    color: white;
-  }
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #282c34;
+}
 
- #board td {
-    width: 50px;
-    height: 50px;
-    background-color: #f4f4f3;
-    border: 1px solid #000;
-    position: relative;
-  }
-  
-  
-  #start-game {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  #start-game:hover {
-    background-color: #7ee68a;
-  }
+#game {
+  text-align: center;
+  color: white;
+}
 
-  #restart-game {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  #restart-game:hover {
-    background-color: #7ee68a;
-  }
-  
-  .piece {
-    border-radius: 50%;
-    margin: 5px;
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    transition: top 1s ease;
-  }
-  .p1 {
-    background-color: red; 
-  }
-  
-  .p2 {
-    background-color: blue;
-  }
+#board td {
+  width: 50px;
+  height: 50px;
+  background-color: #f4f4f3;
+  border: 2px solid #000;
+  position: relative;
+}
 
-  #column-top td {
-    border: dashed 1px lightgray;
-  }
-  
-  #column-top td:hover {
-    background-color: gold;
-  }
-  
+
+#start-game {
+  background-color: #f4dc0b;
+  color: rgb(11, 10, 10);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#start-game:hover {
+  background-color: #f4dc0b;
+}
+
+#restart-game {
+  background-color: #f4dc0b;
+  color: rgb(11, 11, 11);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#restart-game:hover {
+  background-color: #f4dc0b;
+}
+
+.piece {
+  border-radius: 50%;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  transition: top 1s ease;
+}
+.p1 {
+  background-color: red; 
+}
+
+.p2 {
+  background-color: #0582af;
+}
+
+#column-top td {
+  border: dashed 1px rgb(11, 10, 10);
+}
+
+#column-top td:hover {
+  background-color: #f4dc0b;
+}
