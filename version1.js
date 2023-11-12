@@ -118,7 +118,7 @@ class Game {
     this.placeInTable(y, x);
 
     if (this.checkForWin()) {
-      return this.endGame(`Player ${this.currPlayer} ${this.playerNames[this.currPlayer - 1]} won!`);
+      return this.endGame(`${this.playerNames[this.currPlayer - 1].toUpperCase()} Won!`);
     }
 
     if (this.board.every(row => row.every(cell => cell))) {
@@ -130,9 +130,8 @@ class Game {
   }
 
   updateTurnDisplay() {
-    const playerName = this.playerNames[this.currPlayer - 1];
-    this.currentPlayerSpan.textContent = playerName;
-    this.currentPlayerSpan.style.color = this.currPlayer === 1 ? "red" : "#0582af";
+    const playerName = this.playerNames[this.currPlayer - 1].toUpperCase();
+    this.currentPlayerSpan.textContent = `${playerName}'S Turn`;
   }
 
   checkForWin() {
