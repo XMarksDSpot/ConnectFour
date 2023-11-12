@@ -42,7 +42,7 @@ h1::before {
 }
 #restart-game {
   background-color: #f4dc0b;
-  color: rgb(247, 240, 240);
+  color: #000000;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
